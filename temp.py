@@ -39,20 +39,20 @@ def printTemp():
 
 try:
     GPIO.setup(red,GPIO.OUT,initial=GPIO.LOW)
-    GPIO.setup(green, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(green, GPIO.OUT,initial=GPIO.LOW)
     setupFan()
 
     while True:
         printTemp()
-        GPIO.output(fan_pin,TRUE)
-        GPIO.output(red,TRUE)
-        GPIO.output(green,TRUE)
-        print("fan on")
-        time.sleep(5)       
+        GPIO.output(fan_pin,GPIO.HIGH)
+        GPIO.output(red,GPIO.HIGH)
+        GPIO.output(green,GPIO.HIGH)
+        print("fan , LED on")
+        time.sleep(5)
         GPIO.output(fan_pin,GPIO.LOW)
         GPIO.output(red, GPIO.LOW)
-        GPIO.output(green, GPIO.HIGH)
-        print("fan off")
+        GPIO.output(green, GPIO.LOW)
+        print("fan , LED off")
         time.sleep(5)
 
 
