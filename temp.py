@@ -5,11 +5,11 @@ import RPi.GPIO as GPIO
 import Adafruit_DHT as dht
 
 sensor = dht.DHT11
-temp_pin = 7
-fan_pin = 40
-red= 11
-green= 13
-GPIO.setmode(GPIO.BOARD)
+temp_pin = 4
+fan_pin = 21
+red= 17
+green= 27
+GPIO.setmode(GPIO.BCM)
 
 def setupFan():
     GPIO.setup(fan_pin, GPIO.OUT)
@@ -58,9 +58,9 @@ try:
 
 except KeyboardInterrupt:
     print("Terminated by keyboard")
-    GPIO.cleanup()
+
 finally:
     print("End of Program")
-
+    GPIO.cleanup()
 
 
