@@ -14,10 +14,10 @@ disp.display()
 image = Image.new('1',(disp.width, disp.height)) 
 
 draw = ImageDraw.Draw(image) 
-draw.rectangle((0,0,disp.width-1, disp.height-1), outline=1, fill=0) 
 
 font = ImageFont.load_default() 
-draw.text((16,24),'14CORE | OLED TEST CODE', font=font, fill=255) 
+draw.text((1,1),'Temperature : 27.8', font=font, fill=255) 
 
 disp.image(image) 
 disp.display()
+
