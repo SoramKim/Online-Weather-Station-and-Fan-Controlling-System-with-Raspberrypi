@@ -35,6 +35,6 @@ def sendDataToServer():
         temp= "%.1f" %temperature
 	hum ="%.1f" %humidity
 	press = "%.1f" %pressure
-	urllib2.urlopen("http:192.168.137.236/add_data.php?temp="+temp+"&hum="+hum+"&pr="+press).read()
+	urllib2.urlopen("http:192.168.137.236/weather/add_data.php?temp="+temp+"&hum="+hum+"&pr="+press).read()
 
 sendDataToServer()
