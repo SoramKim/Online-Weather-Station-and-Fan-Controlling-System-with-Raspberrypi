@@ -54,7 +54,7 @@ try:
 
 except KeyboardInterrupt:
     print("Terminated by keyboard")
-
+    GPIO.cleanup()
 finally:
     print("End of Program")
 
