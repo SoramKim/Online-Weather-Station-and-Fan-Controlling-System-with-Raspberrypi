@@ -55,9 +55,11 @@ def displayOLED(h,t):
     image = Image.new('1', (disp.width, disp.height))
     draw = ImageDraw.Draw(image)
     font = ImageFont.load_default()
+    font1= ImageFont.truetype('Minecraftia.ttf',10)
 
-    draw.text((1, 1), "Temperature :"+str(t)+"*C", font=font, fill=255)
-    draw.text((1, 20), "Humidity :"+str(h)+"%", font=font, fill=255)
+    draw.text((1, 1), "Temperature, Humidity", font=font, fill=255)
+    draw.text(5, 10), str(t)+"*C", font=font1, fill=255)
+    draw.text((5, 20), str(h)+"%", font=font1, fill=255)
     disp.image(image)
     disp.display()
 
