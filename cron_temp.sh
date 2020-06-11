@@ -1,1 +1,1 @@
-python /home/pi/final/OSS-Final-Project/weatherStation_perSecond.py
+python /home/pi/final/OSS-Final-Project/weatherStation_cron.py
