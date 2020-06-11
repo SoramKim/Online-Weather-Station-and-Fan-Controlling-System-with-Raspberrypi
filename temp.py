@@ -40,7 +40,7 @@ def controlFan(h,t):
         if t>maxTmp :
             print("Temperature is high")
             GPIO.output(red, GPIO.HIGH)
-        else : 
+        else :
             GPIO.output(red, GPIO.LOW)
 
         if h>maxHum :
@@ -78,10 +78,13 @@ def displayOLED(h,t):
 
 try:
     setup()
+    f = open("tempLog", "w")
+    f.close
     while True:
         hum,temp=getTemp()
         displayOLED(hum,temp)
         controlFan(hum,temp)
+        f.write(str(temp) + " " + str(hum))
         time.sleep(1)
 
 except KeyboardInterrupt:
@@ -90,5 +93,3 @@ except KeyboardInterrupt:
 finally:
     print("End of Program")
     GPIO.cleanup()
-
-
