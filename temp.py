@@ -84,7 +84,7 @@ try:
         hum,temp=getTemp()
         displayOLED(hum,temp)
         controlFan(hum,temp)
-        f.write(str(temp) + " " + str(hum))
+        f.write(str(temp) + " " + str(hum)+"\n")
         time.sleep(1)
 
 except KeyboardInterrupt:
