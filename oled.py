@@ -14,9 +14,14 @@ disp.display()
 image = Image.new('1',(disp.width, disp.height)) 
 
 draw = ImageDraw.Draw(image) 
+h=70.3
+t=23.4
+font = ImageFont.load_default()
+font1 = ImageFont.truetype('Minecraftia.ttf',13)
 
-font = ImageFont.load_default() 
-draw.text((1,1),'Temperature : 27.8', font=font, fill=255) 
+
+draw.text((1,1),"Temperature:"+str(t), font=font1, fill=255)
+draw.text((1,20),"Temperature:"+str(h), font=font1, fill=255)
 
 disp.image(image) 
 disp.display()

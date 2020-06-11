@@ -15,7 +15,7 @@ temp_pin = 4
 fan_pin = 21
 red= 17
 green= 27
-maxTmp=26
+maxTmp=30
 maxHum=80
 
 def setup():
@@ -38,13 +38,21 @@ def controlFan(h,t):
     if (t > maxTmp) | (h > maxHum) :
         GPIO.output(fan_pin, True)
         if t>maxTmp :
-            GPIO.output(red, GPIO.HIGH)
             print("Temperature is high")
+            GPIO.output(red, GPIO.HIGH)
+        else : 
+            GPIO.output(red, GPIO.LOW)
+
         if h>maxHum :
             GPIO.output(green, GPIO.HIGH)
             print("Humidity is high")
+        else :
+            GPIO.output(green,GPIO.LOW)
+
     else:
         GPIO.output(fan_pin, False)
+        GPIO.output(red, GPIO.LOW)
+        GPIO.output(red, GPIO.LOW)
 
 def displayOLED(h,t):
     disp = Adafruit_SSD1306.SSD1306_128_64(rst=6, dc=12, spi=SPI.SpiDev(0, 0, max_speed_hz=8000000))
@@ -55,14 +63,18 @@ def displayOLED(h,t):
     image = Image.new('1', (disp.width, disp.height))
     draw = ImageDraw.Draw(image)
     font = ImageFont.load_default()
-    font1= ImageFont.truetype('Minecraftia.ttf',10)
+    font1= ImageFont.truetype('Minecraftia.ttf',15)
 
-    draw.text((1, 1), "Temperature, Humidity", font=font, fill=255)
-    draw.text(5, 10), str(t)+"*C", font=font1, fill=255)
-    draw.text((5, 20), str(h)+"%", font=font1, fill=255)
+    draw.text((2, 1),"Soram's Lab", font=font, fill=255)
+    draw.text((5, 20),"Temp:", font=font, fill=255)
+    draw.text((50, 20),str(t), font=font1, fill=255)
+    draw.text((100, 20),"*C", font=font, fill=255)
+    draw.text((5, 40),"Humi:", font=font, fill=255)
+    draw.text((50, 40),str(h), font=font1, fill=255)
+    draw.text((100, 40),"%", font=font, fill=255)
     disp.image(image)
-    disp.display()
 
+    disp.display()
 
 try:
     setup()
@@ -70,7 +82,7 @@ try:
         hum,temp=getTemp()
         displayOLED(hum,temp)
         controlFan(hum,temp)
-        time.sleep(5)
+        time.sleep(1)
 
 except KeyboardInterrupt:
     print("Terminated by keyboard")
