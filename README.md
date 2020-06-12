@@ -31,20 +31,25 @@ sudo apt-get install python-pip
 sudo pip install RPi.GPIO
 </code>
 </pre>
-
-
 * Python Imaging Library 설치
-  sudo apt-get install python-imaging python-smbus
-
+<pre>
+<code>
+sudo apt-get install python-imaging python-smbus
+</code>
+</pre>
 * OLED (SSD1306) Python Library 설치
-  sudo apt-get install git
-  git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
-  cd Adafruit_Python_SSD1306
-  sudo python setup.py install
-
+<pre>
+<code>
+sudo apt-get install git
+git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
+cd Adafruit_Python_SSD1306
+sudo python setup.py install
+</code>
+</pre>
 * 온습도 센서 데이터 획득을 위한 Adafruit_DHT Library 설치
-  sudo pip3 install Adafruit_DHT
-
+<code>
+sudo pip3 install Adafruit_DHT
+</code>
 
 # Where can I get more help, if I need it?
 
