@@ -1,6 +1,6 @@
 ## OSS Final Project 
 ---------------------------
-# Online Weather Station and Fan Controlling System with temperature and humidity sensor 
+# Online Weather Station and Fan Controlling System
 ## 기능
 * 온도와 습도를 1초마다 측정한다 
 * 온도가 특정 값 이상으로 넘어가면 빨간 LED ON, Cooling Fan 작동
@@ -66,7 +66,7 @@ http://raspberrypi4u.blogspot.com/2017/03/raspberry-pi-dht-sensor-oled.html
 https://www.letmecompile.com/scheduler-cron-tutorial/
 
 # License 
-Online Weather Station and Fan Controlling System with temperature and humidity sensor 
+Online Weather Station and Fan Controlling System 
 
 Written by Soram Kim(soram523@gmail.com). 
 MIT license, all text above must be included in any redistribution
