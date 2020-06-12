@@ -68,6 +68,15 @@ sudo pip3 install Adafruit_DHT
 </code>
 </pre>
 
+## 주의사항
+* OLED (SSD1306) library를 사용하기 위해 python2 -> python3으로 변경 해야한다.
+* SSD1306 OLED에서 SPI 통신을 사용하기 때문에 라즈베리파이의 SPI를 아래의 코드를 통해 활성화 시켜주어야 한다.
+<pre>
+<code>
+sudo raspi-config
+</code>
+</pre>
+
 # Where can I get more help, if I need it?
 <https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black/usage>
 https://projects.raspberrypi.org/en/projects/build-your-own-weather-station/9
