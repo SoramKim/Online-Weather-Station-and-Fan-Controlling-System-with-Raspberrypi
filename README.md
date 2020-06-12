@@ -57,6 +57,9 @@ sudo pip3 install Adafruit_DHT
 </pre>
 
 # Where can I get more help, if I need it?
+<https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black/usage>
+https://projects.raspberrypi.org/en/projects/build-your-own-weather-station/9
+http://raspberrypi4u.blogspot.com/2017/03/raspberry-pi-dht-sensor-oled.html
 
 # License 
 * Soram Kim
