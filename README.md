@@ -19,7 +19,9 @@
 * 점퍼선(M/F) 과 Bread Board
 
 # Why is this project useful?
-
+* 온습도에 따라 자동으로 Cooling fan을 제어
+* 온습도에 따른 led 표시기능 및 OLED를 통한 현재 온도 Display
+* Online server를 통해 현재 온도 및 습도 확인 가능
 
 # How do I get started?
 *   RPI.GPIO 설치 
@@ -65,27 +67,7 @@ https://www.letmecompile.com/scheduler-cron-tutorial/
 
 # License 
 Online Weather Station and Fan Controlling System with temperature and humidity sensor 
-Written by Soram Kim
 
-you can redistribute it and/or modify it under the terms of the GNU General Public License as published by
-the Free Software Foundation
+Written by Soram Kim(soram523@gmail.com). 
+MIT license, all text above must be included in any redistribution
 
-* Soram Kim
-* Handong Global University
-* soram523@gmail.com
-
-Online Weather Station and Fan Controlling System with temperature and humidity sensor 
-Copyright (C) Soram Kim
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>
