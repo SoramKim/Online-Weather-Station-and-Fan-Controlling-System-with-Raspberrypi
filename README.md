@@ -1,5 +1,5 @@
-OSS Final Project 
-# Online Weather Station and Fan Control System with temparature and humidity sensor 
+# OSS Final Project 
+# Online Weather Station and Fan Controlling System with temperature and humidity sensor 
 ## 기능
 * 온도와 습도를 1초마다 측정한다 
 * 온도가 특정 값 이상으로 넘어가면 빨간 LED ON, Cooling Fan 작동
@@ -22,11 +22,16 @@ OSS Final Project
 
 # How do I get started?
 *   RPI.GPIO 설치 
+<pre>
+<code>
 sudo apt-get update
 sudo apt-get install build-essential
 sudo apt-get install python-dev
 sudo apt-get install python-pip
 sudo pip install RPi.GPIO
+</code>
+</pre>
+
 
 * Python Imaging Library 설치
   sudo apt-get install python-imaging python-smbus
