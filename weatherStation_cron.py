@@ -62,17 +62,16 @@ def displayOLED(h,t):
     image = Image.new('1', (disp.width, disp.height))
     draw = ImageDraw.Draw(image)
     font = ImageFont.load_default()
-    font1= ImageFont.truetype('Minecraftia.ttf',15)
+    #font1= ImageFont.truetype('Minecraftia.ttf',15)
     draw.text((2, 1),"Soram's Lab", font=font, fill=255)
     draw.text((5, 20),"Temp:", font=font, fill=255)
-    draw.text((50, 20),str(t), font=font1, fill=255)
+    draw.text((50, 20),str(t), font=font, fill=255)
     draw.text((100, 20),"*C", font=font, fill=255)
     draw.text((5, 40),"Humi:", font=font, fill=255)
-    draw.text((50, 40),str(h), font=font1, fill=255)
+    draw.text((50, 40),str(h), font=font, fill=255)
     draw.text((100, 40),"%", font=font, fill=255)
     disp.image(image)
     disp.display()
-
 
 
 setup()
@@ -85,4 +84,3 @@ controlFan(hum, temp)
 f.write(str(temp) + " " + str(hum) + "\n")
 f.close
 GPIO.cleanup()
-
