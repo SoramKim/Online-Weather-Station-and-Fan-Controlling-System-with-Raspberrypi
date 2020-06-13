@@ -15,7 +15,7 @@ temp_pin = 4
 fan_pin = 21
 red= 17
 green= 27
-maxTmp=30
+maxTmp=29
 maxHum=80
 
 def setup():
