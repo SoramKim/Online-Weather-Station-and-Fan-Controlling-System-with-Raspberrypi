@@ -1,6 +1,7 @@
 ## OSS Final Project 
 ---------------------------
 # Online Weather Station and Fan Controlling System
+![weatherStationImage](https://user-images.githubusercontent.com/50056220/84561943-713b6a00-ad8b-11ea-826b-53b9a34c7698.jpg)
 ## 기능
 * 온도와 습도를 1초마다 측정한다 
 * 온도가 특정 값 이상으로 넘어가면 빨간 LED ON, Cooling Fan 작동
@@ -79,9 +80,9 @@ sudo raspi-config
 
 # Where can I get more help, if I need it?
 <https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black/usage>
-https://projects.raspberrypi.org/en/projects/build-your-own-weather-station/9
 http://raspberrypi4u.blogspot.com/2017/03/raspberry-pi-dht-sensor-oled.html
 https://www.letmecompile.com/scheduler-cron-tutorial/
+https://projects.raspberrypi.org/en/projects/build-your-own-weather-station/9
 
 # License 
 Online Weather Station and Fan Controlling System 
