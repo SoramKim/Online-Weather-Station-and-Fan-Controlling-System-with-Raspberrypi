@@ -1,5 +1,5 @@
 ## OSS Final Project 
-### 발표영상 <https://youtu.be/KvxT2CwVjb4>
+### Presentation Video <https://youtu.be/KvxT2CwVjb4>
 ---------------------------
 # Online Weather Station and Fan Controlling System
 ![weatherStationImage](https://user-images.githubusercontent.com/50056220/84561943-713b6a00-ad8b-11ea-826b-53b9a34c7698.jpg)
