@@ -85,6 +85,32 @@ http://raspberrypi4u.blogspot.com/2017/03/raspberry-pi-dht-sensor-oled.html
 https://www.letmecompile.com/scheduler-cron-tutorial/
 https://projects.raspberrypi.org/en/projects/build-your-own-weather-station/9
 
+
+
+# +) 다른 오픈소스 프로젝트의 출처 표시
+
+* 1) DHT Sensor and OLED 부분 참고
+http://raspberrypi4u.blogspot.com/2017/03/raspberry-pi-dht-sensor-oled.html
+
+* 2) SSD1306 OLED 연결법 및 예제 코드 참고
+https://m.blog.naver.com/PostView.nhn?blogId=idec1995&logNo=221276313106&proxyReferer=https:%2F%2Fwww.google.com%2F
+https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black/usage
+
+* 3) crontab 사용시 참고
+https://jdm.kr/blog/2
+
+* 4) 온습도 PHP 이용하여 서버에 표시할 때 참고
+https://ilikesan.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-DS18B20-%EC%98%A8%EB%8F%84%EC%84%BC%EC%84%9C-PHP-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8?category=609655
+
+
+# +) 새로 추가한 작업
+출처 1 에서 사용한 센서 종류가 달라 새롭게 GPIO핀에 mapping 시키는 작업 진행 
+온도와 습도에 따라 Green & Red LED를 제어하는 부분 추가
+온도와 습도에 따라 Cooling Fan을 자동 제어하는 부분 추가 
+여러가지 함수들 생성해 단계를 구조화. setup(),fanControl() 등  
+Crontab을 이용하여 1분마다 온도를 측정해 새로운 파일에 저장하도록 하였고 이를 이용하여 Online Server에서 온도를 확인 할 수 있도록 추가함 
+
+
 # License 
 Online Weather Station and Fan Controlling System 
 
