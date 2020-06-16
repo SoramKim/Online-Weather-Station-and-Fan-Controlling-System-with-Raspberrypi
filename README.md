@@ -103,7 +103,7 @@ https://jdm.kr/blog/2
 https://ilikesan.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-DS18B20-%EC%98%A8%EB%8F%84%EC%84%BC%EC%84%9C-PHP-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8?category=609655
 
 
-# +) 새로 추가한 작업
+# +) 기존 프로젝트에서 새로 추가한 작업
 * 출처 1 에서 사용한 센서 종류가 달라 새롭게 GPIO핀에 mapping 시키는 작업 진행 
 * 온도와 습도에 따라 Green & Red LED를 제어하는 부분 추가
 * 온도와 습도에 따라 Cooling Fan을 자동 제어하는 부분 추가 
