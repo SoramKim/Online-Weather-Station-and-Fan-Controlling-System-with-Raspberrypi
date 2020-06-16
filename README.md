@@ -104,11 +104,11 @@ https://ilikesan.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B
 
 
 # +) 새로 추가한 작업
-출처 1 에서 사용한 센서 종류가 달라 새롭게 GPIO핀에 mapping 시키는 작업 진행 
-온도와 습도에 따라 Green & Red LED를 제어하는 부분 추가
-온도와 습도에 따라 Cooling Fan을 자동 제어하는 부분 추가 
-여러가지 함수들 생성해 단계를 구조화. setup(),fanControl() 등  
-Crontab을 이용하여 1분마다 온도를 측정해 새로운 파일에 저장하도록 하였고 이를 이용하여 Online Server에서 온도를 확인 할 수 있도록 추가함 
+* 출처 1 에서 사용한 센서 종류가 달라 새롭게 GPIO핀에 mapping 시키는 작업 진행 
+* 온도와 습도에 따라 Green & Red LED를 제어하는 부분 추가
+* 온도와 습도에 따라 Cooling Fan을 자동 제어하는 부분 추가 
+* 여러가지 함수들 생성해 단계를 구조화. setup(),fanControl() 등  
+* Crontab을 이용하여 1분마다 온도를 측정해 새로운 파일에 저장하도록 하였고 이를 이용하여 Online Server에서 온도를 확인 할 수 있도록 추가함 
 
 
 # License 
