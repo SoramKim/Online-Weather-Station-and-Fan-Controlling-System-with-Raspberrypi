@@ -1,4 +1,3 @@
-## OSS Final Project 
 ### Presentation Video <https://youtu.be/KvxT2CwVjb4>
 ---------------------------
 # Online Weather Station and Fan Controlling System
